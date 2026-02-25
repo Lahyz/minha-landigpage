@@ -6,10 +6,13 @@
     <title>Lah | Sites que Convertem</title>
     
     <meta name="description" content="Lah | Sites profissionais, rápidos e otimizados para o Google.">
+    <link rel="icon" type="image/x-icon" href="imagem/favicon.ico">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-
+    
+    <script src="https://unpkg.com/lucide@latest" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -45,7 +48,7 @@
                     <p>Meu foco é performance e engenharia de busca. Crio landing pages com código limpo e funcional, desenhadas para carregar instantaneamente e serem alavancadas pelo algoritmo do Google. Menos firula visual, mais velocidade e foco total na sua conversão.</p>
                 </div>
                 <div class="about-image">
-                    <img src="imagem/lah-web-design1.webp" alt="Lah - Desenvolvedora">
+                    <img src="imagem/lah-web-design1.webp" alt="Lah - Desenvolvedora" width="200" height="200" fetchpriority="high">
                 </div>
             </div>
         </section>
@@ -90,7 +93,7 @@
                     
                     <div class="swiper-slide project-card" onclick="window.open('https://lahyz.github.io/MODELOS/link%20bio/modelo%20-%201/linkbio.html')">
                         <div class="project-image">
-                            <img src="imagem/linkbio.png" alt="Projeto 1">
+                            <img src="imagem/linkbio.png" alt="Projeto 1" loading="lazy" width="400" height="220">
                             <div class="project-overlay">
                                 <span>Ver Projeto <i data-lucide="external-link"></i></span>
                             </div>
@@ -103,7 +106,7 @@
 
                     <div class="swiper-slide project-card" onclick="window.open('https://lahyz.github.io/MODELOS/captura/modelo%20-%201/index.html')">
                         <div class="project-image">
-                            <img src="imagem/captura landing page.webp" alt="Projeto 2">
+                            <img src="imagem/captura landing page.webp" alt="Projeto 2" loading="lazy" width="400" height="220">
                             <div class="project-overlay">
                                 <span>Ver Projeto <i data-lucide="external-link"></i></span>
                             </div>
@@ -116,7 +119,7 @@
 
                     <div class="swiper-slide project-card" onclick="window.open('https://lahyz.github.io/Lading-Page---Ingles/')">
                         <div class="project-image">
-                            <img src="imagem/landing page serviços.webp" alt="Projeto 3">
+                            <img src="imagem/landing page serviços.webp" alt="Projeto 3" loading="lazy" width="400" height="220">
                             <div class="project-overlay">
                                 <span>Ver Projeto <i data-lucide="external-link"></i></span>
                             </div>
@@ -140,27 +143,24 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        lucide.createIcons();
-
-        // Inicialização do Slider
-        const swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            grabCursor: true,
-            navigation: {
-                nextEl: ".next-btn",
-                prevEl: ".prev-btn",
-            },
-            breakpoints: {
-                640: { slidesPerView: 2 },
-                1024: { slidesPerView: 2.5 }
-            }
-        
-        });
-
-        // Revelar Hero ao carregar
         document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+
+            const swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                grabCursor: true,
+                navigation: {
+                    nextEl: ".next-btn",
+                    prevEl: ".prev-btn",
+                },
+                breakpoints: {
+                    640: { slidesPerView: 2 },
+                    1024: { slidesPerView: 2.5 }
+                }
+            });
+
             const reveal = document.querySelector('.reveal');
             reveal.style.opacity = '1';
             reveal.style.transform = 'translateY(0)';
