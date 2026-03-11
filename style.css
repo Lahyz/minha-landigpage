@@ -7,6 +7,24 @@
     --cinza-claro: #9b999d;
 }
 
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('fonte/PlusJakartaSans-VariableFont_wght.woff2') format('woff2'),
+         url('fonts/PlusJakartaSans-Bold.ttf') format('truetype');
+    font-weight: 800;  */
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('fonte/PlusJakartaSans-VariableFont_wght.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
