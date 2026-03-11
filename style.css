@@ -1,10 +1,10 @@
 :root {
-    --lilas: #be8be0;
+    --lilas: #57c1ff;
     --azul-glacial: #a8d1e7;
-    --gradiente: linear-gradient(135deg, #a8d1e7 0%, #bfa2d3 100%);
-    --fundo: #f9f7f9;
-    --texto: #1a1a1b;
-    --cinza-claro: #ece8f0;
+    --gradiente: linear-gradient(90deg, #57c1ff 0%, #a8d1e7 100%);
+    --fundo: #ffffff;
+    --texto: #000000;
+    --cinza-claro: #9b999d;
 }
 
 * {
@@ -40,14 +40,14 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
-    background: rgba(249, 247, 249, 0.8);
+    background:#0f161e;
     backdrop-filter: blur(10px);
     z-index: 1000;
     border-bottom: 1px solid var(--cinza-claro);
 }
 
 .logo img {
-    height: 45px;
+    height: 40px;
     width: auto;
 }
 
@@ -57,7 +57,7 @@ body {
     gap: 8px;
     font-size: 0.8rem;
     font-weight: 700;
-    color: #555;
+    color: var(--fundo);
 }
 
 .status-dot::before {
@@ -271,7 +271,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(191, 162, 211, 0.85);
+    background: var(--lilas);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -279,9 +279,6 @@ p {
     transition: 0.3s;
 }
 
-.project-card:hover .project-overlay {
-    opacity: 1;
-}
 
 .project-overlay span {
     color: #fff;
@@ -311,16 +308,16 @@ p {
 .footer-brand {
     text-align: center;
     padding: 60px 0;
-    border-top: 1px solid var(--cinza-claro);
 }
 
 .line {
-    width: 40px;
+    width: 50px;
     height: 3px;
     background: var(--gradiente);
     margin: 0 auto 20px;
     border-radius: 10px;
 }
+
 
 @media (max-width: 768px) {
     .about-content {
